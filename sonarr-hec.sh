@@ -2,7 +2,9 @@
 
 exec 1> >(logger -s -t $(basename $0)) 2>&1
 
+# Example host: https://hostname:8088/services/collector/event
 host=""
+# Token taken from Splunk install
 token=""
 
 action=$sonarr_eventtype
